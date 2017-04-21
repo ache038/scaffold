@@ -1,8 +1,6 @@
 # React Scaffold
 
-## 1. Name Specification
-
-
+## 1. Project Structure
 
 
 
