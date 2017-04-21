@@ -1,5 +1,5 @@
 # Summary
 
 * [Specification](README.md)
-  * [React Project](react-project.md)
+  * [1. React Project](react-project.md)
 
