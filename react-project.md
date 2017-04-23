@@ -81,6 +81,13 @@
   * Table `dt`
   * Row `dr`
   * Cell `dd`
+* All Component code structure
+  * Constructor
+  * React Phase Functions
+  * Handle
+  * Render
 * 
+
+
 
 
