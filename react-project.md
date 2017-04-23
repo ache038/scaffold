@@ -52,7 +52,8 @@
 * Packaged locally for shared/tool.
 * All prop came from state tree named start with `rdx`；（rdx -&gt; redux）
 * All prop came from parent named start with `rt`；（rt -&gt; react）
-* All function start with `fn`；
+* All external functions start with `fn`；
+* All inner functions \( In react component \) start with `handle`——the same as now.
 * Each module contains following Js source file
   * vector.js——Define state to props, apply `reselect` library in future.
   * dispatch.js——Define dispatch to props.
@@ -81,7 +82,5 @@
   * Row `dr`
   * Cell `dd`
 * 
-
-
 
 
