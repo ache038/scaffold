@@ -53,11 +53,13 @@
 * All prop came from state tree named start with `rdx`；（rdx -&gt; redux）
 * All prop came from parent named start with `rt`；（rt -&gt; react）
 * All external functions start with `fn`；
+* All private functions start with `_`；
 * All inner functions \( In react component \) start with `handle`——the same as now.
 * Each module contains following Js source file
   * vector.js——Define state to props, apply `reselect` library in future.
   * dispatch.js——Define dispatch to props.
   * ui.event.js——Define event function that related to ui.
+
   * index.js——Component JS, enable `prop-type` in development environment, apply DisplayName attribute to each component.
 * redux-orm function name with lifecycle phase
   * Service Layer——fnInit、fnCreate、fnModify、fnGet、fnGetList、fnRemove
@@ -87,7 +89,5 @@
   * Handle
   * Render
 * 
-
-
 
 
