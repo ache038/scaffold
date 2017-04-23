@@ -24,10 +24,6 @@
 │   │   │   ├── index.js           # UI Component JS file
 │   │   │   ├── index.css          # Css files.
 │   │   │   ├── controls           # Sub Component JS folder.
-│   │   │   ├── Action.js          # Redux Action source file
-│   │   │   ├── Epics.js           # Epics source file of RxJs
-│   │   │   ├── Models.js          # Model of 'redux-orm' 
-│   │   │   └── Reducers.js        # Redux Reducer source file
 │   ├── shared
 │   │   ├── <SharedName>           # Shared Components Name
 │   │   ├── index.js               # Entry Js File
@@ -35,7 +31,6 @@
 │   ├── tool
 │   │   ├── index.js               # Entry Js File
 │   │   ├── package.json           # Private package using
-
 ```
 
 
