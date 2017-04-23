@@ -29,6 +29,7 @@
 │   │   ├── index.js               # Entry Js File
 │   │   ├── package.json           # Private package using
 │   ├── tool
+│   │   ├── <FetureFolder>         # Feture Folder for different using.
 │   │   ├── index.js               # Entry Js File
 │   │   ├── package.json           # Private package using
 ```
