@@ -4,6 +4,7 @@
 
 ```
 ├── develop                        # Development Tool Folder
+├── public                         # Static public assets ( Not Js source code )
 
 ```
 
