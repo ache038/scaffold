@@ -121,6 +121,8 @@ For this part, the sub component should be followed by all importing.
 // -----------------------------------------------------------
 *: Constant values such as html id, component name here.
 const Name = "XXX";
+# Redux-Form
+const form = "fmXXX";
 
 // -----------------------------------------------------------
 // Language resources
@@ -159,7 +161,14 @@ class Component extends React.PureComponent{
 // -----------------------------------------------------------
 // Metadata for Component
 // -----------------------------------------------------------
-Component.displayName = Name
+Component.displayName = Name;
+# Non Redux-Form : 
+export default mapping.connectIndex(Component);
+
+# Redux-Form : Component = mapping.connectIndex(Component,formValueSelector(form));
+export default reduxForm({
+    form
+})(Component)
 ```
 
 
