@@ -171,5 +171,37 @@ export default reduxForm({
 })(Component)
 ```
 
+### 3.2. Redux.Mapping.js
+
+```javascript
+import {connect} from 'react-redux'
+import Types from '../../redux/actionTypes']
+// -----------------------------------------------------------
+// Index: state -> props, dispatch -> props
+// -----------------------------------------------------------
+# Non Redux-Form
+const indexS2P = (state) => {
+    return {
+    }
+}
+# Redux-Form
+const indexS2P = (selector) => (state) => {
+    return {
+    }
+}
+
+const indexD2P = {
+}
+// -----------------------------------------------------------
+// Redux Connect for each component
+// -----------------------------------------------------------
+export default {
+    // Non Redux-Form
+    connectIndex: (Component) => (connect(indexS2P,indexD2P)(Component)),
+    // Redux-Form
+    connectIndex: (Component,selector) => (connect(indexS2P(selector),indexD2P)(Component))
+}
+```
+
 
 
