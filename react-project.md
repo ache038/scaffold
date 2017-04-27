@@ -203,5 +203,22 @@ export default {
 }
 ```
 
+### 3.3. Ts.UI.js
+
+```javascript
+import Lib from '../../lib'
+const ts = Lib.Ts.UI;
+// -----------------------------------------------------------
+// Component.Filter init: componentDidMount
+// -----------------------------------------------------------
+*: Where to use ?
+const initFilter = (id) => {
+    
+};
+export default{
+    initFilter
+}
+```
+
 
 
