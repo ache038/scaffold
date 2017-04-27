@@ -67,8 +67,6 @@
 ├── tpl                            # [Template File]
 │   ├── pdf                        # Html Template Files.
 ├── lib.js                         # Library connect point -> Data, Ts, Util, (ID function)
-
-
 ```
 
 ## 2. Naming
@@ -83,7 +81,7 @@
 * All the internal used function start with `_`
 * Ts.UI.js interface could be mix with `verb + componentName`such as 
   * init：initialize major component
-  * initFilter: initialize sub component
+  * initFilter: initialize sub component `Component.Filter`
 * Redux.Mapping.js: Exposed interface should be function with name`connect<Component>`, the main component name is fixed: `connectIndex`.
 * Component.js: named Component with static attribute displayName to be distinguish.
   * mapping -&gt; `import mapping from './Redux.Mapping`:Recommend fixed name to connect Redux.Mapping.js
@@ -101,26 +99,68 @@ All the source code file should be divide into different area with the same sequ
 
 ### 3.1. Component.js
 
-```
+```js
 <Import third part library such as react, react-redux>
 // -----------------------------------------------------------
 // External Importing
 // -----------------------------------------------------------
 *: Import the file we defined that is out of our current component folder
+import Lib from '../../lib'
 
 // -----------------------------------------------------------
 // Internal Importing ( Uniform )
 // -----------------------------------------------------------
 *: Import the file we defined that is in current component folder such as Ts.UI.js, Redux.Mapping.js. 
 For this part, the sub component should be followed by all importing.
+# CSS: import './Component.css'
+# Redux: import mapping from './Redux.Mapping'
+# Ts UI: import ui from './Ts.UI'
 
 // -----------------------------------------------------------
 // ID, Name
 // -----------------------------------------------------------
 *: Constant values such as html id, component name here.
+const Name = "XXX";
+
+// -----------------------------------------------------------
+// Language resources
+// -----------------------------------------------------------
+const Lg = Lib.Data.Lg(Name);
+*：Language Setting for current component.
+
+// -----------------------------------------------------------
+// Internal function to build attributes.
+// -----------------------------------------------------------
+*: Build configuration file 
+# _config
+# _style
+# _options
+
+// -----------------------------------------------------------
+// Class Definition
+// -----------------------------------------------------------
+class Component extends React.PureComponent{
+    constructor(props){
+        super(props)
+    }
+    // -------------------------------------------------------
+    // React Handler
+    // -------------------------------------------------------
+    handleXXXX(){}
+    // -------------------------------------------------------
+    // Life Cycle
+    // -------------------------------------------------------
+    componentDidMount(){}
+    // -------------------------------------------------------
+    // Render
+    // -------------------------------------------------------
+    render(){}
+}
+// -----------------------------------------------------------
+// Metadata for Component
+// -----------------------------------------------------------
+Component.displayName = Name
 ```
-
-
 
 
 
