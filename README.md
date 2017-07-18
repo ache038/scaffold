@@ -8,7 +8,9 @@
 
 ## 2. Configuration
 
-
+* [KM2001 - Database \( Model \)](/configuration/km2001-database-model.md)
+* [KM2002 - Restful](/configuration/km2002-restful.md)
+* [KM2003 - Server Extension](/configuration/km2003-server-extension.md)
 
 ## 3. Development
 

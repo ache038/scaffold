@@ -6,4 +6,8 @@
   * [KM1001 - Set Up](environment/km1001-set-up.md)
   * [KM1002 - Front End](environment/km1002-front-end.md)
   * [KM1003 - Back End](environment/km1003-back-end.md)
+* [Configuration](configuration.md)
+  * [KM2001 - Database \( Model \)](configuration/km2001-database-model.md)
+  * [KM2002 - Restful](configuration/km2002-restful.md)
+  * [KM2003 - Server Extension](configuration/km2003-server-extension.md)
 
