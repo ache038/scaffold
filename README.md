@@ -1,4 +1,4 @@
-# Specification Scaffold
+# Epic Scaffold
 
 ## 1. Environment
 
