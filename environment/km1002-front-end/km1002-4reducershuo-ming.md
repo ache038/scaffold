@@ -11,8 +11,8 @@ src/redux/reducers/
 初始化状态的两个文件路径如下：
 
 ```
-src/redux/reducers/Out.json
-src/shared/state.json
+OOB状态文件：src/redux/reducers/Out.json
+Ext应用状态文件：src/shared/state.json
 ```
 
 ### OOB
@@ -46,7 +46,6 @@ src/shared/state.json
     }
   }
 }
-
 ```
 
 状态说明如下：
