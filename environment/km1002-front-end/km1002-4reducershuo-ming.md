@@ -6,5 +6,11 @@
 src/redux/reducers/
 ```
 
+初始化状态信息
+
+```json
+
+```
+
 
 
