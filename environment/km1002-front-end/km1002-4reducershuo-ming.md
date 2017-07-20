@@ -77,5 +77,9 @@ vie-ui的状态文件包含两部分，OOB和Ext分别对应标准vie-ui的状�
 | content -&gt; form | 表单专用状态节点 |
 | env -&gt; hotel | 酒店管理系统酒店全局信息专用数据节点 |
 
+## 状态树说明
+
+
+
 
 
