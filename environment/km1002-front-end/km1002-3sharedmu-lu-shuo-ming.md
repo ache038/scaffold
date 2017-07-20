@@ -41,7 +41,6 @@ export default {
     // 共享资源文件
     Lg,
     Types,
-    UI,
     Uri,
     Icon: Icon.ExtJs,
 }
