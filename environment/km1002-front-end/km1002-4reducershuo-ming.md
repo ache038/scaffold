@@ -9,7 +9,21 @@ src/redux/reducers/
 初始化状态信息
 
 ```json
-
+{
+  "app":{
+    "data":{},
+    "inited":false
+  },
+  "nav":{},
+  "menu":{},
+  "aside":{},
+  "page":{
+    "openKeys":[]
+  },
+  "content":{
+    "form":{}
+  }
+}
 ```
 
 
