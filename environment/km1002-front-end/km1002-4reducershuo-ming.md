@@ -8,7 +8,12 @@ src/redux/reducers/
 
 ## 初始化状态
 
-初始化状态树如下
+初始化状态的两个文件路径如下：
+
+```
+src/redux/reducers/Out.json
+
+```
 
 ### OOB
 
@@ -32,9 +37,5 @@ src/redux/reducers/
 
 ### Ext
 
-
-
 状态说明如下：
-
-
 
