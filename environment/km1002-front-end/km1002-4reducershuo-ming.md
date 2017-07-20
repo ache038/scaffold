@@ -10,6 +10,8 @@ src/redux/reducers/
 
 初始化状态树如下
 
+### OOB
+
 ```json
 {
   "app":{
@@ -27,6 +29,10 @@ src/redux/reducers/
   }
 }
 ```
+
+### Ext
+
+
 
 状态说明如下：
 
