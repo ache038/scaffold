@@ -6,6 +6,7 @@
 * [KM1002 - 2.全局配置](/environment/km1002-front-end/km1002-2quan-ju-pei-zhi.md)
 * [KM1002 - 3.shared目录说明](/environment/km1002-front-end/km1002-3sharedmu-lu-shuo-ming.md)
 * [KM1002 - 4.Reducer说明](/environment/km1002-front-end/km1002-4reducershuo-ming.md)
+* [KM1002 - 5.Epic说明](/environment/km1002-front-end/km1002-5epicshuo-ming.md)
 
 
 
