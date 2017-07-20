@@ -23,7 +23,28 @@ Shared目录主要包含以下几大类信息
 ## 1. Shared连接入口
 
 ```
+src/lib/index.js
+```
 
+该文件为统一工具目录，之中包含的资源文件如下：
+
+```javascript
+import Lg from '../shared/lg.js'
+import Types from '../shared/actions'
+import Uri from '../shared/uris'
+import Icon from '../shared/icons'
+import UI from '../control'
+
+...
+export default {
+    ...
+        // 共享资源文件
+    Lg,
+    Types,
+    UI,
+    Uri,
+    Icon: Icon.ExtJs,
+}
 ```
 
 
