@@ -79,5 +79,22 @@ vie-ui的状态文件包含两部分，OOB和Ext分别对应标准vie-ui的状�
 
 ## 状态树说明
 
-![](/assets/KM10002/002.png)
+![](/assets/KM10002/002.png)状态树主要包含四个主要节点：
+
+```javascript
+export default combineReducers({
+    routing: routerReducer,
+    form: formReducer,
+    "do": createEpics(),
+    // Web Flow专用函数
+    out
+});
+```
+
+* routing：React-Router专用的状态树
+* form：Redux-Form专用的状态树
+* do：Epic专用状态树
+* out：Vie-Ui专用状态树
+
+
 
