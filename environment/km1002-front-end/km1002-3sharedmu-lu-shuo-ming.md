@@ -11,6 +11,10 @@ Shared目录主要包含以下几大类信息
 * `global.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】
 * `actions.js`：Redux专用的Action定义文件；
 * `routes.js`：Redux-Router使用的入口路由文件；
-* 
+* `state.json`：应用专用初始状态格式文件，Redux中非OOB状态的专用数据状态文件；
+* `uris.js`：远程API全局管理文件，用于管理所有远程的API路径信息，可支持表达式格式；
+
+
+
 
 
