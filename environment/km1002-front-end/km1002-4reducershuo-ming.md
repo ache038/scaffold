@@ -70,7 +70,10 @@ vie-ui的状态文件包含两部分，OOB和Ext分别对应标准vie-ui的状�
 | nav | 顶部导航栏数据 |
 | menu | 左侧主菜单数据 |
 | aside | 左侧【个人中心】主菜单数据 |
-| page | 当前页面专用数据 |
+| page | 菜单效果专用数据，对应关系如下 |
+| page -&gt; active | 当前主菜单选中id |
+| page -&gt; aside | 当前最终子菜单选中的id |
+| page -&gt; openKeys | 目前已经打开的父菜单id集合 |
 
 
 
