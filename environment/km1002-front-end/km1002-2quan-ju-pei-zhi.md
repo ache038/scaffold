@@ -34,7 +34,7 @@ src/config.json
 | endpoint | 远程访问的Restful专用Endpoint地址【跨域访问】 |
 | name | 当前应用名称，该名称需要和后端SYS\_APP表中的S\_NAME字段对应，应用启动页会从后端读取该应用更加细节的全局配置信息。 |
 | event | Redux专用事件前缀，最终会生成类似下边这种Action名称：$$VIE-UI/SUC/APP/DO/CONFIG，该名称会反应到redux-logger中 |
-| key | Session/Local两种本地存储机制专用的键前缀，最终会在浏览器中生成Key如： |
+| key | Session/Local两种本地存储机制专用的键前缀，最终会在浏览器中生成Key如：@@RTV/SESSION/USER |
 
 
 
