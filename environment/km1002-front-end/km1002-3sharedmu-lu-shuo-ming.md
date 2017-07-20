@@ -38,7 +38,7 @@ import UI from '../control'
 ...
 export default {
     ...
-        // 共享资源文件
+    // 共享资源文件
     Lg,
     Types,
     UI,
