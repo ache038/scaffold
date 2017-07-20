@@ -1,4 +1,10 @@
 # Reducer说明
 
-Reducer文件位于
+所有Reducer文件位于下边目录：
+
+```
+src/redux/reducers/
+```
+
+
 
