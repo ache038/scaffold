@@ -51,5 +51,21 @@ Less文件的导入一般在内部的`.less`文件中使用头部导入
 @import '../../shared/global';
 ```
 
+state.json文件的导入在`redux/reducers/state.json`中，除了OOB的状态以外，Ext的状态也会在Reducer的入口文件中被导入
+
+```javascript
+import Fn from '../../lib'
+import data from './Out.json'
+import ext from '../../shared/state.json'
+
+const _writeState = (state, payload = {}) => {
+    state = Fn.State.writeData(state, payload);
+    if(payload.callback){
+        payload.callback(payload);
+    }
+    return {...state}
+};
+```
+
 
 
