@@ -6,7 +6,7 @@
 src/redux/reducers/
 ```
 
-初始化状态信息
+初始化状态树如下
 
 ```json
 {
