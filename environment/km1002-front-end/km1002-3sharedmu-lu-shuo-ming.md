@@ -33,7 +33,6 @@ import Lg from '../shared/lg.js'
 import Types from '../shared/actions'
 import Uri from '../shared/uris'
 import Icon from '../shared/icons'
-import UI from '../control'
 
 ...
 export default {
