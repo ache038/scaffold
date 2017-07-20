@@ -37,5 +37,17 @@ src/shared/state.json
 
 ### Ext
 
+```json
+{
+  "env":{
+    "hotel":{
+      "inited":false,
+      "data":{}
+    }
+  }
+}
+
+```
+
 状态说明如下：
 
