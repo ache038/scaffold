@@ -6,6 +6,8 @@
 src/redux/reducers/
 ```
 
+## 初始化状态
+
 初始化状态树如下
 
 ```json
@@ -25,6 +27,8 @@ src/redux/reducers/
   }
 }
 ```
+
+状态说明如下：
 
 
 
