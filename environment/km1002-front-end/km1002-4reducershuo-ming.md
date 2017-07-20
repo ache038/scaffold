@@ -12,7 +12,7 @@ src/redux/reducers/
 
 ```
 src/redux/reducers/Out.json
-
+src/shared/state.json
 ```
 
 ### OOB
