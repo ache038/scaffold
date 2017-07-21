@@ -6,19 +6,13 @@ src/shared
 
 Shared目录主要包含以下几大类信息
 
-* `cn`：中文语言包，和`lg.js`配合使用，全局配置中会配置对应的语言目录；
-* `icon`：图标包，和`icons.js`配合使用，目前仅包含一套extjs中使用的个性化图标信息；
+* `res.js`：中文语言包，图标包，全局使用的资源文件信息；
 * `global.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】
-* `actions.js`：全局使用的Action Types定义；
+* `actions.js`：全局使用的Action Types定义——需要使用全局Action时改动，配合reducers.js文件；
+* `reducers.js`：全局使用的Reducer文件——该文件会默认被导入，定义了actions中的实现；
 * `routes.js`：Redux-Router使用的入口路由文件；
-* `state.json`：应用专用初始状态格式文件，Redux中非OOB状态的专用数据状态文件；
-* `uris.js`：远程API全局管理文件，用于管理所有远程的API路径信息，可支持表达式格式；
-
-这些配置的典型特征：
-
-* 每次添加一个新页面，这些内容都可能会被更改；
-* 每个新页面改动的位置是一致的，不会因为逻辑不同而有所变更；
-* 全局资源文件也会存放在该目录中；
+* `state.js`：初始化状态文件；
+* `datum.js`：【系统生成】生成的连接文件，该文件不在git托管中，不同开发人员生成内容不同；
 
 ## Shared连接入口
 
@@ -29,19 +23,21 @@ src/lib/index.js
 该文件为统一工具目录，之中包含的资源文件如下：
 
 ```javascript
-import Lg from '../shared/lg.js'
+import Res from '../shared/res.js'
 import Types from '../shared/actions'
-import Uri from '../shared/uris'
-import Icon from '../shared/icons'
+import UI from '../control'
+import Log from './log'
+import Config from '../config.json'
 
 ...
 export default {
     ...
     // 共享资源文件
-    Lg,
+    Lg: Res.Lg,         // 资源文件语言包
+    UI,                 // 组件库
+    Icon: Res.Icon,     // 全局图标文件
     Types,
-    Uri,
-    Icon: Icon.ExtJs,
+    Config,
 }
 ```
 
