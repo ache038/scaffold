@@ -1,6 +1,6 @@
-# Reducer说明
+# Reducer说明：
 
-所有Reducer文件位于下边目录：
+目前的Reducer主要分为两部分，
 
 ```
 src/redux/reducers/
