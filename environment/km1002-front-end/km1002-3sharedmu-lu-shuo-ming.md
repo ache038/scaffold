@@ -50,7 +50,37 @@ Less文件的导入一般在内部的`.less`文件中使用头部导入
 * 资源文件分为两部分：Lg为语言包，该语言包和全局配置中的配置项lang对应，Icon为图标包；
 * 全局使用的Reducer/Action主要包含在：`actions.js`和`reducers.js`中，一般不带任何业务意义，目前为回写状态树共享；
 * `routes.js`是react-router中需要使用的路由包，添加新的路由页面时候才会需要修改该文件；
-* state.js为
+* `state.js`为初始化全局状态文件，初始化Redux状态树专用
+
+## datum.js生成文件
+
+`datum.js`文件是依靠nodejs的工具生成的，该生成文件充当了连接器的作用，用于连接每一个组件中的两个特殊文件：`Act.Types.js`和`Act.Epic.js`，让所有的组件在使用Reducer的过程中在内部实现一个闭环。
+
+```javascript
+import _yOBE69tW5b0uEpic from '../container/login/Act.Epic.js';
+import _ngqHvxQFa4LxEpic from '../container/main/Act.Epic.js';
+import _GQw76Mb2V3xnTypes from '../container/login/Act.Types.js';
+import __STwG_VBZwaUTypes from '../container/main/Act.Types.js';
+
+import types from './actions';
+export default {
+	handlers:{
+		..._GQw76Mb2V3xnTypes,
+		...__STwG_VBZwaUTypes,
+		...types
+	},
+	epics:{
+		..._yOBE69tW5b0uEpic,
+		..._ngqHvxQFa4LxEpic,
+	}
+}
+```
+
+这个文件会连接container，components目录下的所有Epic和Reducer组件，并export给entry/datum.js中的文件进行连接，那么最大的好处是：开发人员可以只集中在组件目录下开发下列三种组件：
+
+* container：容器组件
+* control：可共享组件（一般不带状态）
+* components：页面组件
 
 
 
