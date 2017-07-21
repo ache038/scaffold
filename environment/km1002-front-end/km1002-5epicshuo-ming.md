@@ -10,7 +10,24 @@
 
 ## 关于生成工具
 
+生成工具用法：（Mac和Linux下）
 
+1. 在vie-ui项目中打开命令行：
+   ```
+   cd src/tool
+   ```
+2. 进入tool目录后，运行：
+   ```
+   node tool-build-datum.js
+   ```
+3. 然后可以看到下边输出：
+   ```
+   [Hit] ../container/login/Act.Epic.js
+   [Hit] ../container/login/Act.Types.js
+   [Hit] ../container/main/Act.Epic.js
+   [Hit] ../container/main/Act.Types.js
+   [SUC] Successfully to write data to ../shared/datum.js
+   ```
 
-
+这样datum.js文件就生成成功了！
 
