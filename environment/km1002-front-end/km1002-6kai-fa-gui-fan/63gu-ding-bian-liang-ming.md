@@ -10,6 +10,8 @@
 | Types | ./Act.Types.js | 当前组件需要使用的Redux的Action信息，一般这个导入在Act.Epic.js中使用 |
 |  | UI.less | 当前组件的专用全局风格文件 |
 |  | UI.Auto.less | 当前组件使用的处理响应式变化的less文件，一般是宽度和高度的自适应专用文件 |
+| Name | 内部 | 当前组件的名称，有两个用途：一是通过文件名读取对应资源文件；二是直接赋值给displayName用于调试； |
+| Lg | 内部 | 一般通过：const Lg = Fn.Lg\(Name\);固定脚本读取，需要使用资源文件时就在render中调用该方法 |
 
 
 
