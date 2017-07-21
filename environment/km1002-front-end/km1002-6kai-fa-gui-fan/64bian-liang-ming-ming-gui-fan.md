@@ -72,14 +72,34 @@ const {Fn = {}, event = {}} = this.props;
 
 ```javascript
 const mapping = Fn.State.readData(state.out,
-        ['app','nav','menu','aside',{"hotel":"env.hotel"}]);
+        ['app','nav','menu','aside',["hotel","env.hotel"]]);
 
 return {
    ...mapping
 }
 ```
 
-上边代码等价于：
+上边代码等价于以下片段
+
+```javascript
+const $hotel = state.out.env.hotel.data;
+const $hoteled = state.out.env.hotel.inited;
+const $app = state.out.app.data;
+const $apped = state.out.app.inited;
+const $nav = state.out.nav.data;
+const $naved = state.out.nav.inited;
+const $menu = state.out.menu.data;
+const $menued = state.out.menu.inited;
+const $aside = state.out.aside.data;
+const $asideed = state.out.aside.inited;
+return {
+    $hotel, $hoteled,
+    $app, $apped,
+    $nav, $naved,
+    $menu, $menued,
+    $aside, $asideed
+}
+```
 
 
 
