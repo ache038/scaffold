@@ -62,13 +62,11 @@ import event from "./Act.Event";
 const {Fn = {}, event = {}} = this.props;
 ```
 
-### 2.3. 继承抽取原则
-
-由于继承时通常会涉及到通用属性，所以需要使用以下几个特殊方法来实现统一流程：
+## 3. 编码技巧
 
 #### State -&gt; Prop
 
-在State到Prop的过程中，可使用下边的方式抽取节点属性：
+由于继承时通常会涉及到通用属性，所以需要使用以下几个特殊方法来实现统一流程，在State到Prop的过程中，可使用下边的方式抽取节点属性：
 
 ```javascript
 const mapping = Fn.State.readData(state.out,
@@ -79,7 +77,7 @@ return {
 }
 ```
 
-上边代码等价于以下片段
+上边代码等价于下边代码
 
 ```javascript
 const $hotel = state.out.env.hotel.data;
@@ -100,6 +98,12 @@ return {
     $aside, $asideed
 }
 ```
+
+### Router属性
+
+在父组件往子组件继承时，尽可能使用下边的方式：
+
+
 
 
 
