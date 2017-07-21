@@ -17,5 +17,5 @@
 * [KM1002 - 8.特殊逻辑](/environment/km1002-front-end/km1002-8te-shu-luo-ji.md)
   * [1.Hoc结构处理](/environment/km1002-front-end/km1002-8te-shu-luo-ji/1hocjie-gou-chu-li.md)
 
-\*：lib目录工具，参考链接：[https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS\_uRxf6P9-lx0GhU/edit\#gid=1789160212](https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS_uRxf6P9-lx0GhU/edit#gid=1789160212)
+\*：lib目录工具，参考链接[https://docs.google.com/spreadsheets/d/157t\_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit\#gid=265737370](https://docs.google.com/spreadsheets/d/157t_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit#gid=265737370)
 
