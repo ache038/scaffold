@@ -101,18 +101,23 @@ return {
 
 ### Router属性抽取
 
-如果要计算render的渲染条件，尽可能调用下边的代码：
+如果要将Router中的属性继承，那么可以使用下边的方式将React Router中的属性从父组件继承到子组件：
 
-```javascript
-const render = Fn.Css.render(this.props, ["app", "nav", "menu", "aside", "hotel"]);
+```jsx
+<User {...facade}
+      {...Fn.Prop.router(this.props)}
+      {...Fn.Prop.get(this.props, ['app'])}/>
 ```
 
-上边的代码等价于：
+注意上边的`Fn.Prop.router(this.props)`，这是抽取react-router中的属性，其内部实现如下：
 
 ```javascript
-const { $apped, $naved, $menued, $asideed, $hoteled } = this.props;
-render = $apped && $naved && $menued && $asideed && $hoteled;
+const router = (props = {}) => {
+    // 提取React Router属性专用
+    const { history, location, match } = props;
+    return { history, location, match }
+};
 ```
 
-其含义为：上述的五个变量对应的数据全部加载完成后render才会为true。
+
 
