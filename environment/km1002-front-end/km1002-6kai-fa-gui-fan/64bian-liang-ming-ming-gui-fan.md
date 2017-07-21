@@ -62,6 +62,30 @@ import event from "./Act.Event";
 const {Fn = {}, event = {}} = this.props;
 ```
 
+### 2.3. 资源约定原则
+
+资源文件（特别是语言文件）在当前结构中和组件实现命名规则的绑定，基本命名规则如下：
+
+**组件代码**
+
+```javascript
+const Name = 'control.bar.ToolBar';
+class Component extends React.PureComponent {
+    ...
+    render(){
+        ...
+        const Lg = Fn.Lg(Name);
+        ...
+    }
+}
+Component.displayName = Name;
+...
+```
+
+资源文件：`src/shared/cn/control.bar.Toolbar.json`
+
+\*：文件名和Name中的值一致，其提取方式在render方法中如上。
+
 ## 3. 编码技巧
 
 #### State -&gt; Prop
