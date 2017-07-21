@@ -27,6 +27,7 @@
     }
   ```
 * save和reset中的函数生成代码如下：
+
   ```js
   // 抽取重要的几个协变函数，用于直接点击过后的前期绑定
   const connect = Fn.Op.bind($hoc.connect);
@@ -43,9 +44,10 @@
       return result;
   };
   ```
+
 * hoc中的left、right的配置会影响按钮的效果：
   * left中的按钮效果以：显示/不显示
-  * right中的按钮效果以：禁用/不禁用
+  * right中的按钮效果以：禁用/不禁用为主
 
 
 
