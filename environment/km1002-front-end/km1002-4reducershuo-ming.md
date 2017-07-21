@@ -6,7 +6,12 @@
 src/shared/reducers.js
 ```
 
+局部的Reducer，局部的Reducer一般通过Epic和Types来实现，实现过程中一般位于三个核心组件目录中，文件名固定：
 
+* `Act.Types.js`
+* `Act.Epic.js`
+
+这两个文件名会被工具扫描到，然后打包到连接文件`src/shared/datum.js`中。
 
 ## 初始化状态
 
