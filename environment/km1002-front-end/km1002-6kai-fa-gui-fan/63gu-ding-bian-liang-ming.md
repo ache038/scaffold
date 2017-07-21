@@ -8,6 +8,8 @@
 | ui | Act.UI.js | 用于render的一些JSX片段专用函数 |
 | Fn | ../../lib/index.js | 工具类 |
 | Types | ./Act.Types.js | 当前组件需要使用的Redux的Action信息，一般这个导入在Act.Epic.js中使用 |
+|  | UI.less | 当前组件的专用全局风格文件 |
+|  | UI.Auto.less | 当前组件使用的处理响应式变化的less文件，一般是宽度和高度的自适应专用文件 |
 
 
 
