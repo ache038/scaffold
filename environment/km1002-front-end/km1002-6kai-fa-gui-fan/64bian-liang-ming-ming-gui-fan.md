@@ -119,5 +119,28 @@ const router = (props = {}) => {
 };
 ```
 
+上边的代码等价于：
+
+```jsx
+<User history={history} location={location} match={match}/>
+```
+
+### 数据属性抽取
+
+回到上边例子中的`Fn.Prop.get(this.props, ['app'])`代码，给个更复杂的：
+
+```jsx
+<Menu {...facade} {...$page}
+        {...Fn.Prop.get(this.props, ['app', 'aside', 'menu'])}/>
+```
+
+除开对应的代码如下：
+
+```jsx
+<Menu $app={$app} $apped={$apped} 
+        $aside={$aside} $asideed={$asideed} 
+        $menu={$menu} $menued={$menued}/>
+```
+
 
 
