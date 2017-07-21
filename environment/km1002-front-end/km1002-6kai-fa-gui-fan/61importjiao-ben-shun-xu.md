@@ -42,7 +42,7 @@ const {
 
 * Ant Design组件不放在同一行，形成每一行一个组件或多个组件的导入模式；
 * 顺序严格按照上边的定义进行
-* 固定的变量名遵循组件内的变量规范：
+* 固定的变量名遵循组件内的变量规范：[6.3.固定变量名](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
 
 
 
