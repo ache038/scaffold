@@ -1,10 +1,12 @@
 # Reducer说明：
 
-目前的Reducer主要分为两部分，
+目前的Reducer主要分为两部分，全局的：
 
 ```
-src/redux/reducers/
+src/shared/reducers.js
 ```
+
+
 
 ## 初始化状态
 
