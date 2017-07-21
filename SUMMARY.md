@@ -4,6 +4,7 @@
   * [1. React Project](react-project.md)
 * [Environment](environment.md)
   * [KM1001 - Set Up](environment/km1001-set-up.md)
+    * KM1002 - 7.control组件说明
   * [KM1002 - Front End](environment/km1002-front-end.md)
     * [KM1002 - 1.前端结构](environment/km1002-front-end/km1002-1qian-duan-jie-gou.md)
     * [KM1002 - 2.全局配置](environment/km1002-front-end/km1002-2quan-ju-pei-zhi.md)
@@ -15,6 +16,7 @@
       * [6.2.组件文件结构](environment/km1002-front-end/km1002-6kai-fa-gui-fan/62zu-jian-wen-jian-jie-gou.md)
       * [6.3.固定变量名](environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
       * [6.4.编码规范](environment/km1002-front-end/km1002-6kai-fa-gui-fan/64bian-liang-ming-ming-gui-fan.md)
+    * KM1002 - 7.组件control定义
   * [KM1003 - Back End](environment/km1003-back-end.md)
 * [Configuration](configuration.md)
   * [KM2001 - Database \( Model \)](configuration/km2001-database-model.md)
