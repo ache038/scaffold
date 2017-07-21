@@ -13,6 +13,9 @@
   * [6.3.固定变量名](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
   * [6.4.编码规范](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/64bian-liang-ming-ming-gui-fan.md)
 * [KM1002 - 7.组件control定义](/environment/km1002-front-end/km1002-7zu-jian-control-ding-yi.md)
+  * [UI.ToolBar](/environment/km1002-front-end/km1002-7zu-jian-control-ding-yi/uitoolbar.md)
+* [KM1002 - 8.特殊逻辑](/environment/km1002-front-end/km1002-8te-shu-luo-ji.md)
+  * [1.Hoc结构处理](/environment/km1002-front-end/km1002-8te-shu-luo-ji/1hocjie-gou-chu-li.md)
 
 \*：lib目录工具，参考链接：[https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS\_uRxf6P9-lx0GhU/edit\#gid=1789160212](https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS_uRxf6P9-lx0GhU/edit#gid=1789160212)
 
