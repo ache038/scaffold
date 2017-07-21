@@ -142,5 +142,7 @@ const router = (props = {}) => {
         $menu={$menu} $menued={$menued}/>
 ```
 
+从Menu中可以看到如下：
 
+![](/assets/KM1002/005.png)
 
