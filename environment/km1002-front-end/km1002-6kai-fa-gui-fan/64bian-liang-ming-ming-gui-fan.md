@@ -99,7 +99,7 @@ return {
 }
 ```
 
-### Render属性
+### Router属性抽取
 
 如果要计算render的渲染条件，尽可能调用下边的代码：
 
@@ -115,6 +115,4 @@ render = $apped && $naved && $menued && $asideed && $hoteled;
 ```
 
 其含义为：上述的五个变量对应的数据全部加载完成后render才会为true。
-
-
 
