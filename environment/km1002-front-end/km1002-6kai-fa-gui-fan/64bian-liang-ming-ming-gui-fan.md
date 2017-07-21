@@ -134,7 +134,7 @@ const router = (props = {}) => {
         {...Fn.Prop.get(this.props, ['app', 'aside', 'menu'])}/>
 ```
 
-除开对应的代码如下：
+除开上边的facade和page过后的等价代码如下：
 
 ```jsx
 <Menu $app={$app} $apped={$apped} 
