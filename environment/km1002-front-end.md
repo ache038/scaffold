@@ -17,5 +17,11 @@
 * [KM1002 - 8.特殊逻辑](/environment/km1002-front-end/km1002-8te-shu-luo-ji.md)
   * [1.Hoc结构处理](/environment/km1002-front-end/km1002-8te-shu-luo-ji/1hocjie-gou-chu-li.md)
 
-\*：lib目录工具，参考链接[https://docs.google.com/spreadsheets/d/157t\_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit\#gid=265737370](https://docs.google.com/spreadsheets/d/157t_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit#gid=265737370)
+\*：lib目录工具，参考链接
+
+[https://docs.google.com/spreadsheets/d/157t\_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit\#gid=265737370](https://docs.google.com/spreadsheets/d/157t_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit#gid=265737370)
+
+\*：redux配置信息，参考链接：
+
+[https://docs.google.com/spreadsheets/d/157t\_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit\#gid=1344498718](https://docs.google.com/spreadsheets/d/157t_gvKaMjwYng9hFdyBcPCtTUCG98Eo8wkxa1sOb2U/edit#gid=1344498718)
 
