@@ -47,21 +47,10 @@ Less文件的导入一般在内部的`.less`文件中使用头部导入
 @import '../../shared/global';
 ```
 
-state.json文件的导入在`redux/reducers/state.json`中，除了OOB的状态以外，Ext的状态也会在Reducer的入口文件中被导入
-
-```javascript
-import Fn from '../../lib'
-import data from './Out.json'
-import ext from '../../shared/state.json'
-
-const _writeState = (state, payload = {}) => {
-    state = Fn.State.writeData(state, payload);
-    if(payload.callback){
-        payload.callback(payload);
-    }
-    return {...state}
-};
-```
+* 资源文件分为两部分：Lg为语言包，该语言包和全局配置中的配置项lang对应，Icon为图标包；
+* 全局使用的Reducer/Action主要包含在：`actions.js`和`reducers.js`中，一般不带任何业务意义，目前为回写状态树共享；
+* `routes.js`是react-router中需要使用的路由包，添加新的路由页面时候才会需要修改该文件；
+* state.js为
 
 
 
