@@ -110,7 +110,8 @@ const render = Fn.Css.render(this.props, ["app", "nav", "menu", "aside", "hotel"
 上边的代码等价于：
 
 ```javascript
-render = $apped && $naved && $menued && $asideed && $hoteled
+const { $apped, $naved, $menued, $asideed, $hoteled } = this.props;
+render = $apped && $naved && $menued && $asideed && $hoteled;
 ```
 
 
