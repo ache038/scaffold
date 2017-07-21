@@ -10,7 +10,7 @@
 * 如果变量名来自于资源文件，则使用下划线前缀：`_`
 * 如果变量名来自于Redux的stateToProp，则使用美元符号前缀：`$`
 * 局部变量命名可自由操作，一般是小写；
-* Redux中的数据节点结果一般是data和inited两个，遵循data，dataed的结构，如：
+* Redux中的数据节点结果一般是data和inited两个，遵循data，dataed的结构（很重要），如：
   ```js
       const $hoteled = state.out['env']['hotel'].inited;
       const $hotel = state.out['env']['hotel'].data;
