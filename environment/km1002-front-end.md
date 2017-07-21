@@ -11,7 +11,7 @@
   * [6.1.Import脚本顺序](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/61importjiao-ben-shun-xu.md)
   * [6.2.组件文件结构](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/62zu-jian-wen-jian-jie-gou.md)
   * [6.3.固定变量名](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
-  * [6.4.变量命名规范](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/64bian-liang-ming-ming-gui-fan.md)
+  * [6.4.编码规范](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/64bian-liang-ming-ming-gui-fan.md)
 
 \*：lib目录工具，参考链接：[https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS\_uRxf6P9-lx0GhU/edit\#gid=1789160212](https://docs.google.com/spreadsheets/d/1xXr9K7huw2WIdKu-hWzxo62A9OyS_uRxf6P9-lx0GhU/edit#gid=1789160212)
 
