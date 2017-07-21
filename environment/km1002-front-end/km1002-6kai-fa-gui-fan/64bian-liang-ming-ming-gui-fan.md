@@ -39,13 +39,47 @@
 
 行为自由主要针对于Act文件，所有的Act文件（Act.Types、Act.Orbit、Act.Event、Act.Types）可自由导入第三方库、Fn以及其他所有的库信息，且导入顺序不限制，该文件中的所有函数都使用const方式纯函数暴露，不定义任何class。
 
-### 2.2. 统一入口
+### 2.2. 统一入口原则
 
 每个组件中入口为UI.js文件，且入口中一般包含：event、Fn等核心变量（ui变量不放在里面），统一入口需要遵循下边几个规则：
 
 * Fn只能从UI.js导入，通过继承的方式往子组件传递；
 * event也只能从UI.js导入，通过继承的方式往子组件传递；
-* 子组件一般很干净，import部分只能使用React、第三方库、Less文件
+* 子组件一般很干净，import部分只能使用React、第三方库、Less文件、Ant Design组件；
+
+如下边两个文件：
+
+```js
+// 父组件：src/container/main/UI.js
+// 导入部分包含
+import Fn from "../../lib";
+
+import event from "./Act.Event";
+
+// ......
+// 子组件：src/container/main/UI.Header.js
+// 子组件中只能使用属性抽取
+const {Fn = {}, event = {}} = this.props;
+```
+
+### 2.3. 继承抽取原则
+
+由于继承时通常会涉及到通用属性，所以需要使用以下几个特殊方法来实现统一流程：
+
+#### State -&gt; Prop
+
+在State到Prop的过程中，可使用下边的方式抽取节点属性：
+
+```javascript
+const mapping = Fn.State.readData(state.out,
+        ['app','nav','menu','aside',{"hotel":"env.hotel"}]);
+
+return {
+   ...mapping
+}
+```
+
+上边代码等价于：
 
 
 
