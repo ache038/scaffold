@@ -59,38 +59,7 @@ export default {
   * false：标识当前数据节点已经不是最新的，需要重新加载
   * true：当前数据节点已经是从远程读取的最新数据，不需要重新加载
 
-### OOB
-
-```json
-{
-  "app":{
-    "data":{},
-    "inited":false
-  },
-  "nav":{},
-  "menu":{},
-  "aside":{},
-  "page":{
-    "openKeys":[]
-  },
-  "content":{
-    "form":{}
-  }
-}
-```
-
-### Ext
-
-```json
-{
-  "env":{
-    "hotel":{
-      "inited":false,
-      "data":{}
-    }
-  }
-}
-```
+## 状态节点含义
 
 状态说明如下：
 
