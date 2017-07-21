@@ -10,6 +10,7 @@
     * [KM1002 - 3.shared目录说明](environment/km1002-front-end/km1002-3sharedmu-lu-shuo-ming.md)
     * [KM1002 - 4.Reducer说明](environment/km1002-front-end/km1002-4reducershuo-ming.md)
     * [KM1002 - 5.结构说明](environment/km1002-front-end/km1002-5epicshuo-ming.md)
+    * [KM1002 - 6.开发规范](environment/km1002-front-end/km1002-6kai-fa-gui-fan.md)
   * [KM1003 - Back End](environment/km1003-back-end.md)
 * [Configuration](configuration.md)
   * [KM2001 - Database \( Model \)](configuration/km2001-database-model.md)
