@@ -114,5 +114,7 @@ const { $apped, $naved, $menued, $asideed, $hoteled } = this.props;
 render = $apped && $naved && $menued && $asideed && $hoteled;
 ```
 
+其含义为：上述的五个变量对应的数据全部加载完成后render才会为true。
+
 
 
