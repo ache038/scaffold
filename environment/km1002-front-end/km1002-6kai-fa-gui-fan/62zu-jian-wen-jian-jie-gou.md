@@ -13,7 +13,7 @@
 9. 组件displayName赋值语句，对应结构2
 10. export部分
 
-参考下边示例：
+## 2. 示例
 
 ```javascript
 import React from 'react'
@@ -101,8 +101,9 @@ class Component extends React.PureComponent {
 Component.displayName = Name;
 // 10.export部分
 export default Component
-
 ```
+
+
 
 
 
