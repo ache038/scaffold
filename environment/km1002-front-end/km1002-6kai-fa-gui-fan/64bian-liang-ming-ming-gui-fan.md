@@ -101,7 +101,17 @@ return {
 
 ### Render属性
 
-在父组件往子组件继承时，尽可能使用下边的方式：
+如果要计算render的渲染条件，尽可能调用下边的代码：
+
+```javascript
+const render = Fn.Css.render(this.props, ["app", "nav", "menu", "aside", "hotel"]);
+```
+
+上边的代码等价于：
+
+```javascript
+render = $apped && $naved && $menued && $asideed && $hoteled
+```
 
 
 
