@@ -76,11 +76,12 @@ export default {
 }
 ```
 
-这个文件会连接container，components目录下的所有Epic和Reducer组件，并export给entry/datum.js中的文件进行连接，那么最大的好处是：开发人员可以只集中在组件目录下开发下列三种组件：
+这个文件会连接container，components目录下的所有Epic和Reducer组件，并export给entry/datum.js中的文件进行连接，那么最大的好处是：开发人员可以只集中在组件目录下开发下列四种组件：
 
 * container：容器组件
 * control：可共享组件（一般不带状态）
 * components：页面组件
+* combination：Hoc组件
 
 
 
