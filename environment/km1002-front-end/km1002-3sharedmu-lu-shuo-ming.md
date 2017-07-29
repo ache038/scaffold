@@ -6,8 +6,8 @@ src/shared
 
 Shared目录主要包含以下几大类信息
 
-* `res.js`：中文语言包，图标包，全局使用的资源文件信息；
-* `global.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】
+* `lg.js`：中文语言包，该语言包和HOC组件I18nComponent绑定，当一个组件需要支持多语言环境时则直接从lg.js中读取语言加载函数（该函数目前只会被I18nComponent使用）；
+* `global.less/sco.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】
 * `actions.js`：全局使用的Action Types定义——需要使用全局Action时改动，配合reducers.js文件；
 * `reducers.js`：全局使用的Reducer文件——该文件会默认被导入，定义了actions中的实现；
 * `routes.js`：Redux-Router使用的入口路由文件；
@@ -23,21 +23,19 @@ src/lib/index.js
 该文件为统一工具目录，之中包含的资源文件如下：
 
 ```javascript
-import Res from '../shared/res.js'
 import Types from '../shared/actions'
+import Config from '../config.json'
 import UI from '../control'
 import Log from './log'
-import Config from '../config.json'
-
+import Lg from '../shared/lg'
 ...
 export default {
     ...
     // 共享资源文件
-    Lg: Res.Lg,         // 资源文件语言包，引入I18nComponent过后可直接取消该资源文件的引用
-    UI,                 // 组件库
-    Icon: Res.Icon,     // 全局图标文件
-    Types,
-    Config,
+    Lg,             // 资源文件语言包，引入I18nComponent过后可直接取消该资源文件的引用
+    UI,             // 可重用组件库
+    Types,          // 全局Redux Type
+    Config,         // 全局配置Json数据文件
 }
 ```
 
