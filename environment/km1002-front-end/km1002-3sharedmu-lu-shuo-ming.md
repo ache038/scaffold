@@ -12,7 +12,7 @@ Shared目录主要包含以下几大类信息
 * `reducers.js`：全局使用的Reducer文件——该文件会默认被导入，定义了actions中的实现；
 * `routes.js`：Redux-Router使用的入口路由文件；
 * `state.js`：初始化状态文件；
-* `datum.js`：【系统生成】生成的连接文件，该文件不在git托管中，不同开发人员生成内容不同；
+* `datum.js`：【系统生成】生成的连接文件，该文件不在git托管中，不同开发人员生成内容不同，目前该文件已经在启动脚本中生成了，所以不需要手工执行工具脚本来生成。
 
 ## Shared连接入口
 
@@ -64,15 +64,15 @@ import __STwG_VBZwaUTypes from '../container/main/Act.Types.js';
 
 import types from './actions';
 export default {
-	handlers:{
-		..._GQw76Mb2V3xnTypes,
-		...__STwG_VBZwaUTypes,
-		...types
-	},
-	epics:{
-		..._yOBE69tW5b0uEpic,
-		..._ngqHvxQFa4LxEpic,
-	}
+    handlers:{
+        ..._GQw76Mb2V3xnTypes,
+        ...__STwG_VBZwaUTypes,
+        ...types
+    },
+    epics:{
+        ..._yOBE69tW5b0uEpic,
+        ..._ngqHvxQFa4LxEpic,
+    }
 }
 ```
 
