@@ -40,7 +40,7 @@ export default {
 }
 ```
 
-Less文件的导入一般在内部的`.less`文件中使用头部导入
+Less文件的导入一般在内部的`.less`文件中使用头部导入语法
 
 ```less
 @import '../../shared/global';
