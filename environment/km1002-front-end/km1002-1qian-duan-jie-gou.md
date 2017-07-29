@@ -2,8 +2,6 @@
 
 整体项目结构如下：
 
-
-
 整体目录如上图所示，每个目录对应的职能如下：
 
 | 目录 | 简介 | 备注 |
@@ -13,6 +11,7 @@
 | node\_modules | npm依赖包专用目录 | 位于**.gitignore**文件中 |
 | public | 静态资源文件目录 | 存放纯的HTML，CSS，图片等 |
 | scripts | 启动脚本目录 | 【Eject】出来的默认启动脚本信息，启动脚本中引入了生成Epic，Types的专用脚本，执行时会自动生成组件中新添加的Epic和Types文件 |
+| src/combination | 高阶组件目录 | High Order Component专用组件 |
 | src/components | 页面组件合集 | 对应Router中的page路径组件 |
 | src/container | 布局组件合集 | 对应模板Layout组件 |
 | src/control | 通用控件合集 | 对应可重用Web组件 |
