@@ -1,6 +1,6 @@
 # KM1002 Front End
 
-本文为vie-ui项目的完整前端项目规范，让开发人员目前可了解前端相关结构以及相关命名规则。
+本文为vie-ui项目的完整前端项目规范，让开发人员目前可了解前端相关结构以及相关命名规则，文章中的项目名为sco，如果有其他项目使用同样的架构，则可替换sco为其他内容，如：vie或htl等。
 
 * [KM1002 - 1.前端结构](/environment/km1002-front-end/km1002-1qian-duan-jie-gou.md)
 * [KM1002 - 2.全局配置](/environment/km1002-front-end/km1002-2quan-ju-pei-zhi.md)
