@@ -49,7 +49,7 @@ export default {
 | page -&gt; aside | 当前最终子菜单选中的id |
 | page -&gt; openKeys | 目前已经打开的父菜单id集合 |
 | content -&gt; form | 表单专用状态节点 |
-| env -&gt; hotel | 酒店管理系统酒店全局信息专用数据节点 |
+| env -&gt; hotel | 系统信息专用数据节点 |
 
 ## 状态树说明
 
