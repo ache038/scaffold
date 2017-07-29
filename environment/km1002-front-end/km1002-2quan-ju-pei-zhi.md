@@ -17,7 +17,8 @@ src/config.json
   "key":"@@RTV/",
   "debug":{
     "ajax":true,
-    "form":false
+    "form":false,
+    "control":true
   },
   "entry":{
     "login":"/htl/login",
