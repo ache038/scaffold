@@ -6,15 +6,15 @@
 src/config.json
 ```
 
-文件内容如下：
+文件结构如下：
 
 ```json
 {
   "lang":"cn",
   "endpoint":"http://localhost:8083",
-  "name":"vie.app.htl",
-  "event":"$$VIE-UI",
-  "key":"@@RTV/",
+  "name":"sco.app.htl",
+  "event":"$$SCO-UI",
+  "key":"@@SCO/",
   "debug":{
     "ajax":true,
     "form":false,
