@@ -18,29 +18,16 @@ src/shared/reducers.js
 初始化状态的文件只有一个`src/shared/state.js`：
 
 ```js
+import { DataLabor} from "../model"
 export default {
-    // 酒店环境数据
-    env: {
-        hotel: {
-            inited: false,
-            data: {}
-        }
-    },
-    // 应用程序数据
-    app: {
-        data: {},
-        inited: false
-    },
-    // 导航栏，左菜单，个人管理菜单
-    nav: {},
-    menu: {},
-    aside: {},
-    // 页面控制
-    page: {
-        openKeys: []
-    },
-    content: {
-        form: {}
+    items: DataLabor.getObject({}),
+    selected: DataLabor.getArray([]),
+    filters: DataLabor.getObject(),
+    detail: DataLabor.getObject(),
+    documents: DataLabor.getArray([]),
+    app:{
+        buyers: DataLabor.getArray(),
+        departments: DataLabor.getArray()
     }
 }
 ```

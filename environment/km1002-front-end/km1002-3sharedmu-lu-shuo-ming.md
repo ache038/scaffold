@@ -46,7 +46,7 @@ Less文件的导入一般在内部的`.less`文件中使用头部导入语法
 @import '../../shared/global';
 ```
 
-* 资源文件Lg不会被开发代码直接引用，引入了I18nComponent的Hoc组件过后，该资源文件会被它默认读取并和对应的组件实现绑定；
+* 资源文件Lg不会被开发代码直接引用，引入了`I18nComponent`的Hoc组件过后，该资源文件会被它默认读取并和对应的组件实现绑定；
 * 全局使用的Reducer/Action主要包含在：`actions.js`和`reducers.js`中，一般不带任何业务意义，目前为回写状态树共享；
 * `routes.js`是react-router中需要使用的路由包，添加新的路由页面时候才会需要修改该文件；
 * `state.js`为初始化全局状态文件，初始化Redux状态树专用
