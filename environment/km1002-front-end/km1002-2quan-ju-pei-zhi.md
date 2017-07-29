@@ -21,8 +21,8 @@ src/config.json
     "control":true
   },
   "entry":{
-    "login":"/htl/login",
-    "admin":"/htl/main/index"
+    "login":"/sco/login",
+    "admin":"/sco/main/index"
   }
 }
 ```
