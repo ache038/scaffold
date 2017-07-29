@@ -31,7 +31,7 @@ src/config.json
 
 | 配置项 | 说明 |
 | :--- | :--- |
-| lang | 当前资源文件使用的语言信息，该目录会决定资源文件的读取位置：src/shared/cn/xxxx，资源文件位于src/shared中 |
+| lang | 当前资源文件使用的语言信息，该目录会决定资源文件的读取位置：src/shared/cn/xxxx，资源文件位于src/shared中，该文件会被I18nComponent组件根据文件名自动加载 |
 | endpoint | 远程访问的Restful专用Endpoint地址【跨域访问】 |
 | name | 当前应用名称，该名称需要和后端SYS\_APP表中的S\_NAME字段对应，应用启动页会从后端读取该应用更加细节的全局配置信息。 |
 | event | Redux专用事件前缀，最终会生成类似下边这种Action名称：$$VIE-UI/SUC/APP/DO/CONFIG，该名称会反应到redux-logger中 |
