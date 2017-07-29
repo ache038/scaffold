@@ -38,6 +38,7 @@ src/config.json
 | key | Session/Local两种本地存储机制专用的键前缀，最终会在浏览器中生成Key如：@@RTV/SESSION/USER |
 | debug -&gt; ajax | 是否开启Ajax调试日志 |
 | debug -&gt; form | 是否开启Form调试日志 |
+| debug -&gt; control | 是否开启控件级别的调试日志 |
 | entry -&gt; login | 登陆入口页面地址（应用内部页面全部从服务端配置中读） |
 | entry -&gt; admin | 登陆过后入口页面 |
 
