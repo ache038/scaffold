@@ -31,11 +31,12 @@ import Lg from '../shared/lg'
 ...
 export default {
     ...
-    // 共享资源文件
+    // 资源文件
     Lg,             // 资源文件语言包，引入I18nComponent过后可直接取消该资源文件的引用
     UI,             // 可重用组件库
     Types,          // 全局Redux Type
     Config,         // 全局配置Json数据文件
+    Log,            // 调试专用日志处理器
 }
 ```
 
