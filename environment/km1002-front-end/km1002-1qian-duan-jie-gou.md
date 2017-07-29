@@ -18,7 +18,7 @@
 | src/container | 布局组件合集 | 对应模板Layout组件 |
 | src/control | 通用控件合集 | 对应可重用Web组件 |
 | src/entry | 入口文件集 | 【不变更】store, reducer, epic管理器 |
-| src/lib | 前端工具库Library | 组件专用库 |
+| src/lib | 前端工具库Library | 专用工具库 |
 | src/model | 前端共享数据模型 | 【TypeScript】主要包含需要使用的统一数据模型，具体信息可参考后文 |
 | src/shared | 共享库 | 语言、图标、连接点资源文件 |
 | src/tool | 开发工具集 | 生成器 |
