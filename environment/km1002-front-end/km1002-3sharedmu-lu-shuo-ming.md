@@ -33,7 +33,7 @@ import Config from '../config.json'
 export default {
     ...
     // 共享资源文件
-    Lg: Res.Lg,         // 资源文件语言包
+    Lg: Res.Lg,         // 资源文件语言包，引入I18nComponent过后可直接取消该资源文件的引用
     UI,                 // 组件库
     Icon: Res.Icon,     // 全局图标文件
     Types,
