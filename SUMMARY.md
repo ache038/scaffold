@@ -4,7 +4,6 @@
   * [1. React Project](react-project.md)
 * [Environment](environment.md)
   * [KM1001 - Set Up](environment/km1001-set-up.md)
-    * KM1002 - 7.control组件说明
   * [KM1002 - Front End](environment/km1002-front-end.md)
     * [KM1002 - 1.前端结构](environment/km1002-front-end/km1002-1qian-duan-jie-gou.md)
     * [KM1002 - 2.全局配置](environment/km1002-front-end/km1002-2quan-ju-pei-zhi.md)
