@@ -13,9 +13,25 @@ environment目录主要包含以下几大类信息
 * `state.js`：初始化状态文件；
 * `datum.js`：【系统生成】生成的连接文件，该文件不在git托管中，不同开发人员生成内容不同，目前该文件已经在启动脚本中生成了，所以不需要手工执行工具脚本来生成。
 
-index.js的连接点如下：
+## index.js连接点
 
 ![](/assets/KM1002/002.png)
+
+| 连接点简介 | 备注 |
+| :--- | :--- |
+| vie-joy | 用于连接vie-joy的工具库，但工具库本身不从index.js导出，vie-joy工具库的连接目的只是为了初始化$app, $public, $secure, $oauth四个核心全局变量 |
+| src/environment/actions.js | 当前应用需要使用的Redux全局Actions |
+| src/config.json | 全局配置文件 |
+| src/combination/index.js | Hoc组件的入口文件 |
+| src/control/index.js | 可重用的Web组件的入口文件 |
+| src/lang/index.js | 当前应用使用的语言包资源文件 |
+| src/environment/icon/index.js | 当前应用使用的Icon图标包资源文件 |
+| $app | Application全局配置类 |
+| $public | 非安全模式的Promise生成类 |
+| $secure | 安全模式的Promise生成类（带Token的请求） |
+| $oauth | 系统专用OAuth类，用于登陆、注销、控制、签名等 |
+
+
 
 ## Shared连接入口
 
