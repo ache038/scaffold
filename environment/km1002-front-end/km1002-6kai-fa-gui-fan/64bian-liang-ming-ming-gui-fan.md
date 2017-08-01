@@ -71,7 +71,7 @@ Component.displayName = Name;
 ...
 ```
 
-资源文件：`src/shared/cn/control.bar.Toolbar.json`
+资源文件：`src/environment/cn/control/bar.Toolbar.json`
 
 \*：文件名和Name中的值一致，其提取方式在render方法中如上。
 
