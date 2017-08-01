@@ -32,21 +32,23 @@
 每个组件中入口为UI.js文件，且入口中一般包含：Event等核心变量，统一入口需要遵循下边几个规则：
 
 * Event只能从UI.js导入，通过继承的方式往子组件传递，且变量名大写；
-* 子组件一般很干净，import部分只能使用React、第三方库、Less文件、Ant Design组件；
+* 子组件中严禁导入`Act.Event.ts`；
 
 如下边两个文件：
 
 ```js
 // 父组件：src/container/main/UI.js
 // 导入部分包含
-import Fn from "../../lib";
 
-import event from "./Act.Event";
+import Event from "./Act.Event";
 
 // ......
 // 子组件：src/container/main/UI.Header.js
 // 子组件中只能使用属性抽取
-const {Fn = {}, event = {}} = this.props;
+    componentWillMount() {
+        const {Event} = this.props;
+        Event.fnNavigator(this.props);
+    }
 ```
 
 ### 2.3. 资源约定原则
