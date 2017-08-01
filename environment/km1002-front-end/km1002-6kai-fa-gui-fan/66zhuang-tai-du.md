@@ -87,5 +87,5 @@ const data = response.revamp(['app']).rework({
 
 ### 判断是否加载完成方法：ready
 
-ready方法会判断对应节点的数据结构中ready是否为true（即是否最新）
+ready方法会判断对应节点的数据结构中ready是否为true（即是否最新），参数同rework，这里不重复介绍。
 
