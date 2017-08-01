@@ -3,7 +3,7 @@
 目前的Reducer主要分为两部分，全局的：
 
 ```
-src/environments/reducers.js
+src/environment/reducers.js
 ```
 
 局部的Reducer，局部的Reducer一般通过Epic和Types来实现，实现过程中一般位于三个核心组件目录中，文件名固定：
@@ -11,7 +11,7 @@ src/environments/reducers.js
 * `Act.Types.js`
 * `Act.Epic.js`
 
-这两个文件名会被工具扫描到，然后打包到连接文件`src/shared/datum.js`中，这个文件会被`src/entry/datum.js`连接
+这两个文件名会被工具扫描到，然后打包到连接文件`src/environment/datum.js`中，这个文件会被`src/entry/datum.js`连接
 
 ## 初始化状态
 
