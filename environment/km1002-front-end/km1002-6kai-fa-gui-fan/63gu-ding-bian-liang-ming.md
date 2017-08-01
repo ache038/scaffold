@@ -4,9 +4,7 @@
 | :--- | :--- | :--- |
 | $hoc |  | I18nComponent组件预处理加载的专用资源文件信息，里面所有根节点的Json属性名使用\_前缀 |
 | redux | Act.Orbit.js | 当前组件需要使用的redux组件，一般是目录中的顶层UI.js组件和redux连接。 |
-| Event | Act.Event.js | 当前组件需要使用的JavaScript纯函数。 |
-| ui | Act.UI.js | 用于render的一些JSX片段专用函数 |
-| Fn | ../../lib/index.js | 工具类 |
+| Event | Act.Event.ts | 当前组件需要使用的纯函数，使用TypeScript书写 |
 | Types | ./Act.Types.js | 当前组件需要使用的Redux的Action信息，一般这个导入在Act.Epic.js中使用 |
 |  | UI.less | 当前组件的专用全局风格文件 |
 |  | UI.Auto.less | 当前组件使用的处理响应式变化的less文件，一般是宽度和高度的自适应专用文件 |
