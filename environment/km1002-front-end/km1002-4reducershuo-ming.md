@@ -75,7 +75,7 @@ export default combineReducers({
 ```
 
 * routing：React-Router专用的状态树
-* form：Redux-Form专用的状态树
+* form：Redux-Form专用的状态树（后期可能取消）
 * do：Epic专用状态树
 * out：Vie-Ui专用状态树
 
