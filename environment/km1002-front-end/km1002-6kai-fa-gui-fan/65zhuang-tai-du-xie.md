@@ -1,7 +1,7 @@
 # 状态写
 
 ```
-StateIn
+StateIn对象，一般作为全局的fnFlush的参数
 ```
 
 ## 1.写状态
