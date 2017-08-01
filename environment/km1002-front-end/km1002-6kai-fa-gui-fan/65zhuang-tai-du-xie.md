@@ -2,7 +2,6 @@
 
 ```
 StateIn
-StateOut
 ```
 
 ## 1.写状态
