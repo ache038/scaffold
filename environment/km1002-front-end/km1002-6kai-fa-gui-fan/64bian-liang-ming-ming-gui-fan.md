@@ -17,13 +17,15 @@
   * React组件内部函数，使用`handle`前缀，并在构造函数中实现绑定；
   * Redux中的dispatch函数，使用`fn`前缀；
   * JavaScript的生成函数，使用`jf`前缀；
-* Session/Storage的前缀以及Action本身的前缀都是直接在`config.json`文件中配置的
+* Session/Storage的前缀以及Action本身的前缀都是直接在`config.json`文件中配置；
+* React/AntDesign两个库不在TypeScript导入，也不在vie-joy自己开发的库中导入（这两个导入无法实现按需加载，而且Ant Design本身不支持TypeScript）
+* 所有的`entity`中的数据结构使用TypeScript开发，并在脚本中单独导入
 
 ## 2. 编码原则
 
 ### 2.1. 行为自由原则
 
-行为自由主要针对于Act文件，所有的Act文件（Act.Types、Act.Orbit、Act.Event、Act.Types）可自由导入第三方库、Fn以及其他所有的库信息，且导入顺序不限制，该文件中的所有函数都使用const方式纯函数暴露，不定义任何class。
+行为自由主要针对于Act文件，所有的Act文件（Act.Types、Act.Orbit、Act.Event）可自由导入第三方库、以及其他所有的库信息，且导入顺序不限制，该文件中的所有函数都使用const方式纯函数暴露，不定义任何class，而且Act.Event的书写使用TypeScript，而不是JavaScript：除开Entity中的数据结构以外，只有Event中的纯函数使用TypeScript编写，其他内容还是使用JavaScript编写。
 
 ### 2.2. 统一入口原则
 
