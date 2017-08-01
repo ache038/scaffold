@@ -8,7 +8,7 @@ src/entity/data/**.ts
 
 * DataObject
 * DataArray
-* DataTree（包含了TreeNode）
+* DataTree（包含了TreeNode，且根节点是数组而不是单对象！）
 
 这些数据模型都实现了DataContainer接口：
 
