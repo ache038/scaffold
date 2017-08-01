@@ -13,7 +13,11 @@
 * 字典序基本规则：为了保证编辑器默认字典序排列，根目录遵循字典序规则
   * 所有的组件全部放到c打头的目录中：`combination, components, container, control`；
   * 所有的全局修改频率小的文件以e打头：`entry, environment, entity`
-* 所有的
+* JavaScript函数主要包含下边三种：
+  * React组件内部函数，使用`handle`前缀，并在构造函数中实现绑定；
+  * Redux中的dispatch函数，使用`fn`前缀；
+  * JavaScript的生成函数，使用`jf`前缀；
+* Session/Storage的前缀以及Action本身的前缀都是直接在`config.json`文件中配置的
 
 ## 2. 编码原则
 
