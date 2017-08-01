@@ -15,7 +15,7 @@ environment目录主要包含以下几大类信息
 
 index.js的连接点如下：
 
-![](/assets/KM1002/002.png)
+
 
 ## Shared连接入口
 
