@@ -86,31 +86,30 @@ export const $oauth = new OAuth({endpoint, key, debug});
 `datum.js`文件是依靠nodejs的工具生成的，该生成文件充当了连接器的作用，用于连接每一个组件中的两个特殊文件：`Act.Types.js`和`Act.Epic.js`，让所有的组件在使用Reducer的过程中在内部实现一个闭环。
 
 ```javascript
-import _yOBE69tW5b0uEpic from '../container/login/Act.Epic.js';
-import _ngqHvxQFa4LxEpic from '../container/main/Act.Epic.js';
-import _GQw76Mb2V3xnTypes from '../container/login/Act.Types.js';
-import __STwG_VBZwaUTypes from '../container/main/Act.Types.js';
+import _FZadJiIM__NZEpic from '../components/fore/Act.Epic.js';
+import _R69W1KW09_bjEpic from '../container/login/Act.Epic.js';
+import _IisOPUWe6aMkEpic from '../container/main/Act.Epic.js';
+import _W1FtXkCivg9yTypes from '../components/fore/Act.Types.js';
+import _okCiWc_z2FADTypes from '../container/login/Act.Types.js';
+import _VKt02BTXfqgtTypes from '../container/main/Act.Types.js';
 
 import types from './actions';
 export default {
-    handlers:{
-        ..._GQw76Mb2V3xnTypes,
-        ...__STwG_VBZwaUTypes,
-        ...types
-    },
-    epics:{
-        ..._yOBE69tW5b0uEpic,
-        ..._ngqHvxQFa4LxEpic,
-    }
+	handlers:{
+		..._W1FtXkCivg9yTypes,
+		..._okCiWc_z2FADTypes,
+		..._VKt02BTXfqgtTypes,
+		...types
+	},
+	epics:{
+		..._FZadJiIM__NZEpic,
+		..._R69W1KW09_bjEpic,
+		..._IisOPUWe6aMkEpic,
+	}
 }
 ```
 
-这个文件会连接container，components目录下的所有Epic和Reducer组件，并export给entry/datum.js中的文件进行连接，那么最大的好处是：开发人员可以只集中在组件目录下开发下列四种组件：
-
-* container：容器组件
-* control：可共享组件（一般不带状态）
-* components：页面组件
-* combination：Hoc组件
+这个文件会连接container，components目录下的所有Epic和Reducer组件，并export给entry/datum.js中的文件进行连接，每次启动应用程序时候脚本会自动执行，如果有新的Types和Epic也会自动打包到当前文件中生成。
 
 
 
