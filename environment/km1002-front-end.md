@@ -12,6 +12,8 @@
   * [6.2.组件文件结构](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/62zu-jian-wen-jian-jie-gou.md)
   * [6.3.固定变量名](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
   * [6.4.编码规范](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/64bian-liang-ming-ming-gui-fan.md)
+  * [6.5.状态写](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/65zhuang-tai-du-xie.md)
+  * [6.6.状态读](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/66zhuang-tai-du.md)
 * [KM1002 - 7.基本数据模型](/environment/km1002-front-end/km1002-7ji-ben-shu-ju-mo-xing.md)
 
 \*：lib目录工具，参考链接
