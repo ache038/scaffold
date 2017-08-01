@@ -77,7 +77,7 @@ export default I18nComponent(Component,Name,Loch.xxxx);
 
 * 文件名和Name中的值一致，其提取方式在render方法中如上；
 * 目前应用中的资源文件读取统一使用`I18nComponent`组件来实现，第三参数是vie-joy中的日志方法库，一般用于组件的有：`container, components, form, hoc, control, stateless`
-* 使用了Hoc中的`I18nComponent`后，则可直接从属性props中提取变量$hoc，并通过调用$hoc.to\(\)来返回JavaScript专用属性对象：资源文件的key统一使用下划线前缀；
+* 使用了Hoc中的`I18nComponent`后，则可直接从属性props中提取变量$hoc，并通过调用$hoc.to\(\)来返回JavaScript专用属性对象：资源文件的key统一使用下划线前缀，`to()`方法调用过后的返回，就是资源文件中的`.json`文件全文。
 
 ## 3. 编码技巧
 
