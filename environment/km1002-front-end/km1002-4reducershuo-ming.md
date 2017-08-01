@@ -18,18 +18,26 @@ src/environment/reducers.js
 初始化状态的文件只有一个`src/shared/state.js`：
 
 ```js
-import { DataLabor} from "../model"
+import {
+    DataLabor,
+} from "../model/index"
 export default {
-    items: DataLabor.getObject({}),
-    selected: DataLabor.getArray([]),
-    filters: DataLabor.getObject(),
-    detail: DataLabor.getObject(),
-    documents: DataLabor.getArray([]),
-    app:{
-        buyers: DataLabor.getArray(),
-        departments: DataLabor.getArray()
+    // 环境基础数据
+    datum: {
+        hotel: DataLabor.getObject()
+    },
+    // 应用程序数据
+    app: DataLabor.getObject(),
+    layout:{
+        // 导航栏，左菜单，个人管理菜单
+        nav: DataLabor.getArray(),
+        menu: DataLabor.getArray(),
+        aside: DataLabor.getArray(),
+        // 页面控制
+        navigator: DataLabor.getNavigator()
     }
 }
+
 ```
 
 上边文件定义了完整的状态信息，数据节点中的数据结构可参考TypeScript中的Model用法
