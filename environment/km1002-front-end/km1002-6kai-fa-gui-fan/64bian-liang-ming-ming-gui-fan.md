@@ -9,6 +9,7 @@
 * 固定变量参考固定变量命名：[6.3.固定变量名](/environment/km1002-front-end/km1002-6kai-fa-gui-fan/63gu-ding-bian-liang-ming.md)
 * 如果变量名来自于资源文件（I18nComponent），则使用下划线前缀：`_`
 * 如果变量名来自于Redux的stateToProp，则使用美元符号前缀：`$`
+* 字典序基本规则：为了保证编辑器默认字典序排列，根目录遵循字典序规则。
 
 ## 2. 编码原则
 
