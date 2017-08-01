@@ -58,13 +58,12 @@ componentWillMount() {
 **组件代码**
 
 ```javascript
+import {I18nComponent) from '../../environment'
 const Name = 'control.bar.ToolBar';
 class Component extends React.PureComponent {
     ...
     render(){
-        ...
-        const Lg = Fn.Lg(Name);
-        ...
+        
     }
 }
 Component.displayName = Name;
@@ -73,7 +72,7 @@ Component.displayName = Name;
 
 资源文件：`src/environment/cn/control/bar.Toolbar.json`
 
-\*：文件名和Name中的值一致，其提取方式在render方法中如上。
+\*：文件名和Name中的值一致，其提取方式在render方法中如上
 
 ## 3. 编码技巧
 
