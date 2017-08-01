@@ -31,7 +31,7 @@ environment目录主要包含以下几大类信息
 | $secure | 安全模式的Promise生成类（带Token的请求） |
 | $oauth | 系统专用OAuth类，用于登陆、注销、控制、签名等 |
 
-## index.js文件解析
+## index.js文件内容
 
 ```
 src/environment/index.js
@@ -40,33 +40,46 @@ src/environment/index.js
 该文件为统一工具目录，之中包含的资源文件如下：
 
 ```javascript
-import Types from '../shared/actions'
-import Config from '../config.json'
-import UI from '../control'
-import Log from './log'
-import Lg from '../shared/lg'
-...
-export default {
-    ...
-    // 资源文件
-    Lg,             // 资源文件语言包，引入I18nComponent过后可直接取消该资源文件的引用
-    UI,             // 可重用组件库
-    Types,          // 全局Redux Type
-    Config,         // 全局配置Json数据文件
-    Log,            // 调试专用日志处理器
-}
+import Config from '../config.json';
+import {
+    App,
+    Promettre,
+    OAuth
+} from 'vie-joy';
+
+export {default as Langue} from '../lang/index'             // Language语言包
+export {default as Ikon} from './icon'                      // Ikon图标包信息
+export {default as Taper} from './actions'                  // Types组件
+
+// Hoc组件专用包
+export {
+    LogComponent,
+    I18nComponent,
+    FormComponent
+} from '../combination'
+
+// Web可重用组件包，包括Ant对话框
+export {
+    LoadingLayout,
+    Dialog,
+    Item
+} from '../control'
+
+// 专用连接，用于构造调试环境以及应用和Promise环境
+export const $config = Config;
+// 只在开发环境开启Promise的专用调试日志
+const {endpoint, key} = Config;
+export const isDebug = () => ('development' === process.env.NODE_ENV && $config.debug);
+const debug = isDebug();
+// 全局应用变量
+export const $app = new App(Config['key'], Config['name']);
+// 不带安全认证的Promise
+export const $public = new Promettre({endpoint, key, debug}, false);
+// 带安全认证的Promise
+export const $secure = new Promettre({endpoint, key, debug});
+// 用户认证专用接口连接
+export const $oauth = new OAuth({endpoint, key, debug});
 ```
-
-Less文件的导入一般在内部的`.less`文件中使用头部导入语法
-
-```less
-@import '../../shared/global';
-```
-
-* 资源文件Lg不会被开发代码直接引用，引入了`I18nComponent`的Hoc组件过后，该资源文件会被它默认读取并和对应的组件实现绑定；
-* 全局使用的Reducer/Action主要包含在：`actions.js`和`reducers.js`中，一般不带任何业务意义，目前为回写状态树共享；
-* `routes.js`是react-router中需要使用的路由包，添加新的路由页面时候才会需要修改该文件；
-* `state.js`为初始化全局状态文件，初始化Redux状态树专用
 
 ## datum.js生成文件
 
