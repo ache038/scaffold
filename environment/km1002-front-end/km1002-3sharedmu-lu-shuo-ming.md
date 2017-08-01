@@ -6,13 +6,16 @@ src/environment
 
 environment目录主要包含以下几大类信息
 
-* `lg.js`：中文语言包，该语言包和HOC组件I18nComponent绑定，当一个组件需要支持多语言环境时则直接从lg.js中读取语言加载函数（该函数目前只会被I18nComponent使用）；
-* `global.less/sco.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】
+* `index.js`：环境入口文件，该文件用于连接所有应用需要使用的资源文件，Model除外
 * `actions.js`：全局使用的Action Types定义——需要使用全局Action时改动，配合reducers.js文件；
 * `reducers.js`：全局使用的Reducer文件——该文件会默认被导入，定义了actions中的实现；
 * `routes.js`：Redux-Router使用的入口路由文件；
 * `state.js`：初始化状态文件；
 * `datum.js`：【系统生成】生成的连接文件，该文件不在git托管中，不同开发人员生成内容不同，目前该文件已经在启动脚本中生成了，所以不需要手工执行工具脚本来生成。
+
+index.js的连接点如下：
+
+
 
 ## Shared连接入口
 
