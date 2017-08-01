@@ -92,5 +92,36 @@ export default I18nComponent(Component,Name,Loch.xxxx);
 * Premettre——Promise生成类
 * OAuth——OAuth认证流程类
 
-上边的类被禁用是防止使用泛滥，真正在使用的时候可通过导入environment/index.js中的全局变量来完成
+上边的类被禁用是防止使用泛滥，真正在使用的时候可通过导入environment/index.js中的全局变量来完成，参考environment/index中的下边代码段：
+
+```javascript
+import Config from '../config.json';
+import {
+    App,
+    Promettre,
+    OAuth
+} from 'vie-joy';
+// 专用连接，用于构造调试环境以及应用和Promise环境
+export const $config = Config;
+// 只在开发环境开启Promise的专用调试日志
+const {endpoint, key} = Config;
+export const isDebug = () => ('development' === process.env.NODE_ENV && $config.debug);
+const debug = isDebug();
+// 全局应用变量
+export const $app = new App(Config['key'], Config['name']);
+// 不带安全认证的Promise
+export const $public = new Promettre({endpoint, key, debug}, false);
+// 带安全认证的Promise
+export const $secure = new Promettre({endpoint, key, debug});
+// 用户认证专用接口连接
+export const $oauth = new OAuth({endpoint, key, debug});
+```
+
+所以正式脚本中，可直接通过下边代码来引用：
+
+```javascript
+import { $config, $oauth } from '../../environment'
+```
+
+
 
