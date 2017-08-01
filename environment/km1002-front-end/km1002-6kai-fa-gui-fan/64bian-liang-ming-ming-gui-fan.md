@@ -45,10 +45,10 @@ import Event from "./Act.Event";
 // ......
 // 子组件：src/container/main/UI.Header.js
 // 子组件中只能使用属性抽取
-    componentWillMount() {
-        const {Event} = this.props;
-        Event.fnNavigator(this.props);
-    }
+componentWillMount() {
+    const {Event} = this.props;
+    Event.fnNavigator(this.props);
+}
 ```
 
 ### 2.3. 资源约定原则
