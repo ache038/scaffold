@@ -15,7 +15,7 @@ src/environment/reducers.js
 
 ## 初始化状态
 
-初始化状态的文件只有一个`src/shared/state.js`：
+初始化状态的文件只有一个`src/environment/state.js`：
 
 ```js
 import {
@@ -33,11 +33,10 @@ export default {
         nav: DataLabor.getArray(),
         menu: DataLabor.getArray(),
         aside: DataLabor.getArray(),
-        // 页面控制
+        // 页面控制，导航信息
         navigator: DataLabor.getNavigator()
     }
 }
-
 ```
 
 上边文件定义了完整的状态信息，数据节点中的数据结构可参考TypeScript中的Model用法
