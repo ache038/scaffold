@@ -60,7 +60,7 @@ export default {
 
 ## 状态树说明
 
-![](/assets/KM1002/002.png)
+![](/assets/KM1002/003.png)
 
 状态树主要包含四个主要节点：
 
