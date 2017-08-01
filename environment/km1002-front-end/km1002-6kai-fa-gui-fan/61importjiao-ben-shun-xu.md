@@ -20,7 +20,7 @@ import {LoadingLayout,LogComponent} from '../../environment'
 import {$app} from '../../environment'
 
 // 导入TypeScript中的数据模型
-import {DataLabor} from '../../model'
+import {DataLabor} from '../../entity'
 
 // 导入redux和Event，变量名固定
 import Event from "./Act.Event";
