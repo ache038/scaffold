@@ -1,7 +1,5 @@
 # 前端文件结构图
 
-
-
 整个前端的结构如上图，这样就可以清楚知道前端的每个文件之间的依赖关系，其中红色部分就是生成的连接文件，它负责连接所有模块中的Act.Epic.js、Act.Types.js以及全局的Types，通过这样的结构，就可以让开发人员集中精力只集中于绿色部分的组件开发以及蓝色部分的模板开发。有几点简单说明一下：
 
 * 组件、模板、以及共享组件（control）中的Epic和Types的文件名必须固定，不可以是其他，否则生成工具无法识别；
@@ -10,24 +8,9 @@
 
 ## 关于生成工具
 
-生成工具用法：（Mac和Linux下）
 
-1. 在vie-ui项目中打开命令行：
-   ```
-   cd src/tool
-   ```
-2. 进入tool目录后，运行：
-   ```
-   node tool-build-datum.js
-   ```
-3. 然后可以看到下边输出：
-   ```
-   [Hit] ../container/login/Act.Epic.js
-   [Hit] ../container/login/Act.Types.js
-   [Hit] ../container/main/Act.Epic.js
-   [Hit] ../container/main/Act.Types.js
-   [SUC] Successfully to write data to ../shared/datum.js
-   ```
 
-这样datum.js文件就生成成功了！
+
+
+
 
