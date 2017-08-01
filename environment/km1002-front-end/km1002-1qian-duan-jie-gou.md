@@ -19,6 +19,7 @@
 | src/control | 通用控件合集 | 对应可重用Web组件 |
 | src/entry | 入口文件集 | 【不变更】store, reducer, epic管理器 |
 | src/environment | 环境专用文件 | 当前应用需要使用的共享资源包 |
+| src/lang | 语言文件专用包 | 当前应用使用的国际化语言文件资源包 |
 | src/model | 前端共享数据模型 | 【TypeScript】主要包含需要使用的统一数据模型，具体信息可参考后文 |
 | src/tool | 开发工具集 | 生成器 |
 | typings | TypeScript依赖 | 【TypeScript】依赖目录 |
