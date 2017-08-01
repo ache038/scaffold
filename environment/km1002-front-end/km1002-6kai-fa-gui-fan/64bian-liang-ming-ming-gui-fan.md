@@ -14,15 +14,7 @@
   * Event中的生成函数：`jf`前缀
   * Event中的直接调用函数或Dispatch、Reducer函数：`fn`前缀
 * 局部变量命名可自由操作，一般是小写；
-* Redux中的数据节点结果一般是data和inited两个，遵循data，dataed的结构（很重要），如：
-  ```js
-  const $hoteled = state.out['env']['hotel'].inited;
-  const $hotel = state.out['env']['hotel'].data;
-  ```
-* 资源文件位于shared/cn/目录下，一般是json格式，其文件名需要和组件中的Name一致，才能被读取，读取的代码一般是固定的：
-  ```js
-  const Lg = Fn.Lg
-  ```
+
 * `Act.Orbit`中的规范统一如下：
   * State -&gt; Prop：命名为`indexS2P`
   * Dispatch -&gt; Prop：命名为`indexD2P`
