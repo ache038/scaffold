@@ -20,6 +20,11 @@
 * Session/Storage的前缀以及Action本身的前缀都是直接在`config.json`文件中配置；
 * React/AntDesign两个库不在TypeScript导入，也不在vie-joy自己开发的库中导入（这两个导入无法实现按需加载，而且Ant Design本身不支持TypeScript）
 * 所有的`entity`中的数据结构使用TypeScript开发，并在脚本中单独导入
+* 组件中自己开发的import只有三种：
+  * 直接从vie-joy项目中import
+  * 从路径`'../../entironment'`中导入，也可使用`'../../environment/index'`
+  * 从路径`'../../entity'`中导入，也可使用`'../../entity/index'`
+* 禁用vie-joy中的三个主要类：App，OAuth，Premettre，参考下边的禁用原则
 
 ## 2. 编码原则
 
@@ -79,5 +84,13 @@ export default I18nComponent(Component,Name,Loch.xxxx);
 * 目前应用中的资源文件读取统一使用`I18nComponent`组件来实现，第三参数是vie-joy中的日志方法库，一般用于组件的有：`container, components, form, hoc, control, stateless`
 * 使用了Hoc中的`I18nComponent`后，则可直接从属性props中提取变量$hoc，并通过调用$hoc.to\(\)来返回JavaScript专用属性对象：资源文件的key统一使用下划线前缀，`to()`方法调用过后的返回，就是资源文件中的`.json`文件全文。
 
+### 2.4. vie-joy禁用类
 
+禁用类的目的是防止代码的泛滥，主要禁用的类如下：
+
+* App——应用程序专用类
+* Premettre——Promise生成类
+* OAuth——OAuth认证流程类
+
+上边的类被禁用是防止使用泛滥，真正在使用的时候可通过导入environment/index.js中的全局变量来完成
 
