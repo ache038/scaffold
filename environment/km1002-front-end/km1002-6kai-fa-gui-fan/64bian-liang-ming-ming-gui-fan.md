@@ -10,15 +10,15 @@
 * 如果变量名来自于资源文件（I18nComponent），则使用下划线前缀：`_`
 * 如果变量名来自于Redux的stateToProp，则使用美元符号前缀：`$`
 * 自己用的函数分为三种：
-  * React内部函数：`handle`前缀
-  * Event中的生成函数：`jf`前缀
-  * Event中的直接调用函数或Dispatch、Reducer函数：`fn`前缀
-* 局部变量命名可自由操作，一般是小写；
+  * 
+* * * 
+* `Act.Orbit`中的规范统一如下
 
-* `Act.Orbit`中的规范统一如下：
-  * State -&gt; Prop：命名为`indexS2P`
-  * Dispatch -&gt; Prop：命名为`indexD2P`
-  * export的函数名为：`connectUI`
+  State -&gt; Prop：命名为`indexS2P`
+
+* Dispatch -&gt; Prop：命名为`indexD2P`
+* export的函数名为：`connectUI`
+
 * `Act.Event`中一般包含两种JavaScript函数：
   * 以js为前缀的函数：生成函数，调用一次过后生成JavaScript函数
   * 以fn为前缀的函数，直接调用函数，遵循函数命名基本规范
