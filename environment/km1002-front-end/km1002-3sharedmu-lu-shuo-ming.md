@@ -1,10 +1,10 @@
-# Shared目录说明
+# environment目录说明
 
 ```
-src/shared
+src/environment
 ```
 
-Shared目录主要包含以下几大类信息
+environment目录主要包含以下几大类信息
 
 * `lg.js`：中文语言包，该语言包和HOC组件I18nComponent绑定，当一个组件需要支持多语言环境时则直接从lg.js中读取语言加载函数（该函数目前只会被I18nComponent使用）；
 * `global.less/sco.less`：CSS全局配置，之中包含了颜色定义、字体定义、可共享的全局CSS定义等【特别是颜色信息，所有的颜色信息都保存在global.less中，最后的应用呈现的“风格”依赖于该文件中定义的全局色彩、字体等】

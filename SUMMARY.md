@@ -7,7 +7,7 @@
   * [KM1002 - Front End](environment/km1002-front-end.md)
     * [KM1002 - 1.前端结构](environment/km1002-front-end/km1002-1qian-duan-jie-gou.md)
     * [KM1002 - 2.全局配置](environment/km1002-front-end/km1002-2quan-ju-pei-zhi.md)
-    * [KM1002 - 3.shared目录说明](environment/km1002-front-end/km1002-3sharedmu-lu-shuo-ming.md)
+    * [KM1002 - 3.environment目录说明](environment/km1002-front-end/km1002-3sharedmu-lu-shuo-ming.md)
     * [KM1002 - 4.Reducer说明](environment/km1002-front-end/km1002-4reducershuo-ming.md)
     * [KM1002 - 5.结构说明](environment/km1002-front-end/km1002-5epicshuo-ming.md)
     * [KM1002 - 6.开发规范](environment/km1002-front-end/km1002-6kai-fa-gui-fan.md)
