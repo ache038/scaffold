@@ -3,7 +3,7 @@
 目前的Reducer主要分为两部分，全局的：
 
 ```
-src/shared/reducers.js
+src/environments/reducers.js
 ```
 
 局部的Reducer，局部的Reducer一般通过Epic和Types来实现，实现过程中一般位于三个核心组件目录中，文件名固定：
