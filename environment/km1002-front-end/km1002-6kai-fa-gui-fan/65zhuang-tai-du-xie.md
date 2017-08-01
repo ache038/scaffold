@@ -31,14 +31,12 @@ Mapping的规则如下：
 
 * 键值中可包含`.`操作符，会生成对应的状态子树，如上图：`layout.nav`会直接挂在`out.layout.nav`节点上；
 * 写入的数据类型包含三种
-  * DataContainer：直接写入，不进行任何转换
-  * Object：构造一个DataObject写入
-  * Array：构造一个DataArray写入
+  * `DataContainer`：直接写入，不进行任何转换
+  * `Object`：构造一个`DataObject`写入
+  * `Array`：构造一个`DataArray`写入
 * callback函数会在最终返回状态之前进行操作，但不更新状态本身！切记。
 
 ## 2.纯状态写入
 
 （开发中）
-
-
 
