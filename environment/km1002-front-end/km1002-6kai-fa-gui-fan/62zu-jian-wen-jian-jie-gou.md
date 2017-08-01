@@ -11,7 +11,7 @@
 7. render方法
 8. Prop-Type区域用于检查合法性（合法性在后期加入）
 9. 组件displayName赋值语句，对应结构2
-10. export部分
+10. export部分——如果包含redux，将redux写在自定义高阶组件Hoc之外
 
 ## 2. 示例
 
@@ -102,8 +102,6 @@ Component.displayName = Name;
 // 10.export部分
 export default Component
 ```
-
-
 
 
 
