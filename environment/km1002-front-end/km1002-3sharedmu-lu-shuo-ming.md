@@ -21,7 +21,7 @@ environment目录主要包含以下几大类信息
 | :--- | :--- |
 | vie-joy | 用于连接vie-joy的工具库，但工具库本身不从index.js导出，vie-joy工具库的连接目的只是为了初始化$app, $public, $secure, $oauth四个核心全局变量 |
 | src/environment/actions.js | 当前应用需要使用的Redux全局Actions |
-| src/config.json | 全局配置文件 |
+| src/config.json -&gt; $config | 全局配置文件，转移到变量$config，调用方法和$app这一类方法一致 |
 | src/combination/index.js | Hoc组件的入口文件 |
 | src/control/index.js | 可重用的Web组件的入口文件 |
 | src/lang/index.js | 当前应用使用的语言包资源文件 |
@@ -31,12 +31,10 @@ environment目录主要包含以下几大类信息
 | $secure | 安全模式的Promise生成类（带Token的请求） |
 | $oauth | 系统专用OAuth类，用于登陆、注销、控制、签名等 |
 
-
-
-## Shared连接入口
+## index.js文件解析
 
 ```
-src/lib/index.js
+src/environment/index.js
 ```
 
 该文件为统一工具目录，之中包含的资源文件如下：
