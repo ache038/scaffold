@@ -120,9 +120,7 @@ POST：[http://localhost:8080/api/v1/item/query/:limit](http://localhost:8080/ap
 
 3. 在整个过程中的一些思路的剖析；
 
-4. 完成度 &gt; 80%
-
-
+4. 完成度 &gt; 80%（最低要求可正常运行）
 
 
 
