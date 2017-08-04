@@ -118,7 +118,7 @@ POST：[http://localhost:8080/api/v1/item/query/:limit](http://localhost:8080/ap
 
 2. 题目的设计思路；
 
-3. 程序的完整性；
+3. 整个程序的架构设计，以及相关完整度；
 
 4. 完成度 &gt; 80%（最低要求可正常运行）
 
