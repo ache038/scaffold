@@ -114,6 +114,15 @@ POST：[http://localhost:8080/api/v1/item/query/:limit](http://localhost:8080/ap
 
 考核标准：
 
-1. 
+1. 本身的代码风格、编程规范；
+
+2. 题目的设计思路；
+
+3. 在整个过程中的一些思路的剖析；
+
+4. 完成度 &gt; 80%
+
+
+
 
 
