@@ -46,6 +46,7 @@ POST接口创建记录
 * type类型使用PostgreSQL中的enum，只能支持A，B，C输入；
 * 时间格式参考：[https://en.wikipedia.org/?title=ISO\_8601](https://en.wikipedia.org/?title=ISO_8601)
 * 创建过程中检查：单价 x 数量 = 总价，该公式是否匹配
+* 业务主键不能重复；
 
 **响应：**
 
