@@ -14,12 +14,13 @@
    1. 所有依赖项使用Mock方式（Mockito）
    2. 使用Jococo检查测试覆盖率（&gt;65%）
 5. 开发完成后使用Markdown书写相关文档，设计思路、架构、编码规范等；
+6. （可选）将日志记录添加到整个请求中，并只是在开发模式中开启日志，可放到AOP层处理；
 
 ## Interface
 
 ### 1. 创建记录
 
-POST接口创建记录
+POST：http://localhost:8080/api/v1/item
 
 **请求：**
 
@@ -68,6 +69,43 @@ POST接口创建记录
             "quantity": "数量",
             "amount": "总金额",
             "createTime":"创建人"
+}
+```
+
+### 2. 查询记录
+
+POST：http://localhost:8080/api/v1/item/query/:limit
+
+**请求：**
+
+```json
+{
+            "type": "A，只选择一种",
+            "itemName": "使用Like模式匹配",
+            "period":{
+                        "from":"从什么时候开始（包含）",
+                        "to":"到什么时候截止（包含）"
+            },
+            "priceWithTax":{
+                        "from":"从什么价格（包含）",
+                        "to":"到什么价格（包含）"
+            }
+}
+```
+
+* 返回结果按照createTime创建时间逆序排列；
+* limit可限制结果返回的条数，并写入到count中；
+
+**响应：**
+
+```json
+{
+    "count":11,
+    "items":[
+        {
+            "comment":"此处数据格式参考接口：1.创建记录的对象响应格式"
+        }
+    ]
 }
 ```
 
