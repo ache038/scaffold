@@ -23,23 +23,25 @@ POST接口创建记录
 
 ```json
 {
-            "id": "111",
-            "type": "GZ",
-            "standardItemIdentification": "6578489",
-            "sellersItemIdentification": "CY3774",
-            "itemName": "BQF3.0曲轴体箱2号 - A",
-            "period": "201705",
+            "businessId": "业务主键（需要检查不重复）",
+            "type": "只支持A，B，C三个值",
+            "standardItemIdentification": "随意",
+            "sellersItemIdentification": "随意",
+            "itemName": "随意（不重复）",
+            "period": "时间格式，输入格式为201703类似",
             "unitCode": "EA",
             "currencyID": "CNY",
-            "receiptID": "1101010100101",
-            "comment": "",
-            "department": "GOD1",
-            "priceWithTax": "50",
-            "quantity": "70",
-            "amount": "3500",
-            "taxPercent": "17"
-        }
+            "receiptID": "随意",
+            "comment": "大文本",
+            "department": "随意",
+            "priceWithTax": "金钱格式",
+            "quantity": "数量",
+            "amount": "总金额"
+}
 ```
 
+* 在数据库中创建主键，主键使用UUID格式；
+* type类型使用PostgreSQL中的enum；
+* 
 
 
