@@ -21,13 +21,15 @@
 
 POST接口创建记录
 
+**请求：**
+
 ```json
 {
             "businessId": "业务主键（需要检查不重复）",
             "type": "只支持A，B，C三个值",
             "standardItemIdentification": "随意",
             "sellersItemIdentification": "随意",
-            "itemName": "随意（不重复）",
+            "itemName": "随意",
             "period": "时间格式，输入格式为201703类似",
             "unitCode": "EA",
             "currencyID": "CNY",
@@ -41,7 +43,32 @@ POST接口创建记录
 ```
 
 * 在数据库中创建主键，主键使用UUID格式；
-* type类型使用PostgreSQL中的enum；
-* 
+* type类型使用PostgreSQL中的enum，只能支持A，B，C输入；
+* 时间格式参考：[https://en.wikipedia.org/?title=ISO\_8601](https://en.wikipedia.org/?title=ISO_8601)
+* 创建过程中检查：单价 x 数量 = 总价，该公式是否匹配
+
+**响应：**
+
+```json
+{
+            "id":"UUID",
+            "businessId": "业务主键（需要检查不重复）",
+            "type": "只支持A，B，C三个值",
+            "standardItemIdentification": "随意",
+            "sellersItemIdentification": "随意",
+            "itemName": "随意",
+            "period": "时间格式，输入格式为201703类似",
+            "unitCode": "EA",
+            "currencyID": "CNY",
+            "receiptID": "随意",
+            "comment": "大文本",
+            "department": "随意",
+            "priceWithTax": "金钱格式",
+            "quantity": "数量",
+            "amount": "总金额",
+            "createTime":"创建人"
+}
+```
+
 
 
